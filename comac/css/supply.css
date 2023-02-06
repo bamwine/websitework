@@ -1,0 +1,100 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {
+	display:block
+}
+mark, rp, rt, ruby, summary, time {
+	display:inline
+}
+/* Left & Right alignment */
+.left {
+	float:left
+}
+.right {
+	float:right
+}
+.wrapper {
+	width:100%;
+	overflow:hidden
+}
+.body3 {
+	
+}
+
+#content2 {
+	padding-bottom:40px
+}
+.pad1 {
+	padding:0 30px 0 33px
+}
+.pad2 {
+	padding:0 28px 0 30px
+}
+.pad_left1 {
+	padding-left:30px
+}
+.pad_bot1 {
+	padding-bottom:5px
+}
+.pad_bot2 {
+	padding-bottom:14px
+}
+.pad_bot3 {
+	padding-bottom:40px
+}
+.marg_right1 {
+	margin-right:39px
+	
+}
+.pad_top1 {
+	padding-top:14px
+}
+.button {
+	display:inline-block;
+	width:89px;
+	line-height:26px;
+	height:26px;
+	color:#fff;
+	text-decoration:none;
+	background:url(../images/button_bg.png) 0 0 no-repeat;
+	text-align:center
+}
+.button:hover {
+	background-position:bottom;
+	color:#191919
+}
+
+.img-circle {
+    border-radius: 50%;
+	width:300px;
+	height:300px;
+}
+
+.button {
+   display: inline-block;
+    width: 89px;
+    line-height: 26px;
+    height: 26px;
+    color: #fff;
+    text-decoration: none;
+    background: url(../images/button_bg.png) 0 0 no-repeat;
+    text-align: center;
+}
+.banner {
+    background: url(../images/banner1-supply.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    min-height: 300px;
+    padding-top: 6em;
+}
+
+.banner h2 {
+    text-align: center;
+    color: black;
+    font-size: 45px;
+    text-transform: capitalize;
+}
+.banner p {
+    text-align: center;
+    font-size: 18px;
+    margin: 1em 0;
+    color: black;
+}

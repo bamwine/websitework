@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>oaksoft : Home</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/logo.jpg"/>
+    <!-- Font Awesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">    
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css"/> 
+    <!-- Progress bar  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-progressbar-3.3.4.css"/> 
+     <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/customecolor.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/ouibounce.min.css"/> 
+	<link rel="stylesheet" href="assets/css/sweet-alert.css" />
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Lato for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>    
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	  </head>
+  <body>
+  
+  <!-- BEGAIN PRELOADER -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  <!-- END PRELOADER -->
+
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start header -->
+  <header id="header">
+    <!-- header top search -->
+    <div class="header-top">
+      <div class="container">
+        <form action="">
+          <div id="search">
+          <input type="text" placeholder="Type your search keyword here and hit Enter..." name="s" id="m_search" style="display: inline-block;">
+          <button type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        </form>
+      </div>
+    </div>
+    <!-- header bottom -->
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-contact">
+              <ul>
+                <li>
+                  <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    +256 789 105 998
+                  </div>
+                </li>
+                <li>
+                  <div class="mail">
+                    <i class="fa fa-envelope"></i>
+                    oaksofto@gmail.com
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-login">
+              <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="#">Login / Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End header -->
+  
+  <!-- Start login modal window -->
+  <div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal fade in">
+    <div class="modal-dialog">
+      <!-- Start login section -->
+      <div id="login-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-unlock-alt"></i>Login</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="User name" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+             <div class="loginbox">
+              <label><input type="checkbox"><span>Remember me</span></label>
+              <button class="btn signin-btn" type="button">SIGN IN</button>
+            </div>                    
+          </form>
+        </div>
+        <div class="modal-footer footer-box">
+          <a href="#">Forgot password ?</a>
+          <span>No account ? <a id="signup-btn" href="#">Sign Up.</a></span>            
+        </div>
+      </div>
+      <!-- Start signup section -->
+      <div id="signup-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-lock"></i>Sign Up</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input placeholder="Name" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Username" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <div class="signupbox">
+              <span>Already got account? <a id="login-btn" href="#">Sign In.</a></span>
+            </div>
+            <div class="loginbox">
+              <label><input type="checkbox"><span>Remember me</span><i class="fa"></i></label>
+              <button class="btn signin-btn" type="button">SIGN UP</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End login modal window -->
+
+  <!-- BEGIN MENU -->
+  <section id="menu-area">      
+    <nav class="navbar navbar-default" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->              
+          <!-- TEXT BASED LOGO -->
+          <a class="navbar-brand" href="index.html">oaksoft</a>              
+          <!-- IMG BASED LOGO  -->
+           <!-- <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a> -->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+			<li><a href="work.html">Our Work</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="service.html">Service</a></li>
+            
+            <!--li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="blog-archive.html">softwares and apps</a></li>                
+                <li><a href="blog-single-with-left-sidebar.html">events</a></li>                          
+              </ul>
+            </li-->
+                           
+            <li><a href="contact.html">Contact</a></li>
+          </ul>                     
+        </div><!--/.nav-collapse -->
+        <a href="#" id="search-icon">
+          <i class="fa fa-search">            
+          </i>
+        </a>
+      </div>     
+    </nav>
+  </section>
+  <!-- END MENU --> 
+
+  <!-- Start slider -->
+  <section id="slider">
+    <div class="main-slider">
+      <div class="single-slide">
+        <img src="assets/images/grap.jpg" alt="oaksoft">
+        <div class="slide-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="slide-article">
+				<h1 class="wow fadeInUp">&nbsp;</h1>
+                  <!--h1 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Grapichs DESIGNING</h1-->
+                  <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s">Graphic designers create visual concepts, using computer software or by hand, to communicate ideas that inspire, inform, and captivate consumers. They develop the overall layout and production design for various applications such as advertisements, brochures, magazines, and corporate reports.</p>
+                  <a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" href="#">Read More</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="slider-img wow fadeInUp">
+                  <img src="assets/images/grap2.jpg" alt="oaksoft">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-slide">
+        <img src="assets/images/website.png" alt="oaksoft">
+        <div class="slide-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="slide-article">
+                  <h1 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Website development </h1>
+                  <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s">our website is a reflection of you. Does yours leave a lasting impression? Partner with a professional web design company that is best at producing beautiful designs with SEO in mind.</p>
+                  <a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" href="#">Read More</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="slider-img wow fadeInUp">
+                  <img src="assets/images/website.png" alt="oaksoft">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+
+<div class="single-slide">
+        <img src="assets/images/arch.jpg" alt="oaksoft">
+        <div class="slide-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-6">
+                <div class="slide-article">
+                  <h1 class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">Creative  ARCHITECTURAL DESIGNING</h1>
+                  <p class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.75s">As with all other kinds of design work, creating good house designs is no easy task. Fortunately, we won’t be running out of new, impressive architectural designs thanks to the many talented architects all over the world. Besides, we have all the state-of-the-art technologies at our disposal nowadays. It’s really amazing how the boundaries of conventional building designs are constantly being stretched.</p>
+                  <a class="read-more-btn wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" href="#">Read More</a>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div class="slider-img wow fadeInUp">
+                  <img src="assets/images/arch2.jpg" alt="oaksoft">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>	  
+    </div>
+  </section>
+  <!-- End slider -->
+
+ 
+  <!-- Start about  -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">About us</h2>
+            <span class="line"></span>
+            <p>Every client is unique, every situation is different. Practices turn to LexisNexis for lots of reasons. But, in most cases, it distills down to a single word: Trust.</p>
+		  
+		  </div>
+        </div>
+        <div class="col-md-12">
+          <div class="about-content">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="our-skill">
+                  <h3>Our Skills</h3>                  
+                  <div class="our-skill-content">
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                    <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="100">
+                        <span class="progress-title">Grapics Design</span>
+                      </div>
+                  </div>
+                  <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="85">
+                        <span class="progress-title">website Design </span>
+                      </div>
+                  </div>
+                  <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="95">
+                        <span class="progress-title">Hardware and software maintaince</span>
+                      </div>
+                  </div>
+                  <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="70">
+                        <span class="progress-title">Server installation</span>
+                      </div>
+                  </div>
+                  <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="85">
+                        <span class="progress-title">Office networking</span>
+                      </div>
+                  </div>
+                   <div class="progress">
+                      <div class="progress-bar six-sec-ease-in-out" role="progressbar" data-transitiongoal="80">
+                        <span class="progress-title">architectural designing</span>
+                      </div>
+                  </div>
+                  </div>                  
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="why-choose-us">
+                  <h3>Why Choose Us?</h3>
+                  <div class="panel-group why-choose-group" id="accordion">
+				  
+				  <div class="panel panel-default ">
+  <div class="panel-heading">
+	<h4 class="panel-title">
+	  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+		Committed to Quality.<span class="fa fa-plus-square"></span>
+	  </a>
+	</h4>
+  </div>
+  <div id="collapseTwo" class="panel-collapse collapse">
+	<div class="panel-body">
+	 <p>We don’t pursue every company that needs computer support. We choose only clients that share in our values. Serving a company’s IT and critical network needs is a HUGE responsibility that we take that very seriously. It takes teamwork and a solid commitment to good communication, excellence, and industry best practices to serve a company in an excellent manner. If we cannot succeed in an excellent manner because of value differences – we simply don’t pursue the opportunity.</p>
+	</div>
+  </div>
+</div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            Trust in our solutions <span class="fa fa-minus-square"></span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                        <p>Leveraging our knowledge of your business, we’re able to create world-class solutions that incorporate more than just the latest technology. There’s tremendous value in designing innovative products that match your needs, function the way you operate, and incorporate the workflows you prefer. To complement that powerful portfolio, we provide a variety of service and support offerings that tap into the experience base of our best people as consultants, trainers, implementation crews and service technicians.</p>
+						
+						</div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default ">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            A Proven Track Record. <span class="fa fa-plus-square"></span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                         <p>Unlike others in our industry, we can prove and show you how we deliver Peace of Mind, Less Downtime, Faster Problem Resolution, Data Protection, Money Savings, Streamlined Communications, and Simplicity in IT management for you.</p>
+						</div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                            Fast Response To Requests & Critical Response Time Guaranteed <span class="fa fa-plus-square"></span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>Some companies think if your problem doesn’t seem that bad they can wait a few days to call you back…. We get back to you fast so you know when your problem will be resolved. Our contracts spell out our response time. And when you’re dead in the water, we respond – FAST.</p>
+						
+						</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about -->
+
+  <!-- Start counter -->
+  <section id="counter">
+    <div class="counter-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="counter-area">
+              <div class="row">
+                <!-- Start single counter -->
+                <div class="col-md-3 col-sm-6">
+                  <div class="single-counter">
+                    <div class="counter-icon">
+                      <i class="fa fa-suitcase"></i>
+                    </div>
+                    <div class="counter-no counter">
+                      127
+                    </div>
+                    <div class="counter-label">
+                      Projects
+                    </div>
+                  </div>
+                </div>
+                <!-- End single counter -->
+                <!-- Start single counter -->
+                <div class="col-md-3 col-sm-6">
+                  <div class="single-counter">
+                    <div class="counter-icon">
+                      <i class="fa fa-clock-o"></i>
+                    </div>
+                    <div class="counter-no counter">
+                      5275
+                    </div>
+                    <div class="counter-label">
+                      Hours Work
+                    </div>
+                  </div>
+                </div>
+                <!-- End single counter -->
+                <!-- Start single counter -->
+                <div class="col-md-3 col-sm-6">
+                 <div class="single-counter">
+                    <div class="counter-icon">
+                      <i class="fa fa-trophy"></i>
+                    </div>
+                    <div class="counter-no counter">
+                      7
+                    </div>
+                    <div class="counter-label">
+                      Awards
+                    </div>
+                  </div>
+                </div>
+                <!-- End single counter -->
+                <!-- Start single counter -->
+                <div class="col-md-3 col-sm-6">
+                  <div class="single-counter">
+                    <div class="counter-icon">
+                      <i class="fa fa-users"></i>
+                    </div>
+                    <div class="counter-no counter">
+                      875
+                    </div>
+                    <div class="counter-label">
+                      Clients
+                    </div>
+                  </div>
+                </div>
+                <!-- End single counter -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End counter -->
+
+
+
+
+  <!-- Start Pricing table -->
+  <section id="pricing-table">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">Our Team</h2>
+            <span class="line"></span>
+            <p> </p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="pricing-table-content">
+            <div class="row">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-table-price wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                  <div class="price-header">
+                    <span class="price-title">software developer</span>
+                    <div class="price">
+                     <img src="assets/images/team_male.jpg" alt="oaksoft" width="100%" height="100%">
+                    </div>
+                  </div>
+                  <div class="price-article">
+                    <ul>
+                      <li>martin</li>
+                      <li>amonneal@gmail.com</li>
+                      <li>js,html,react</li>
+                      
+                    </ul>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-table-price wow fadeInUp" data-wow-duration="0.75s" data-wow-delay="0.75s">
+                  <div class="price-header">
+                    <span class="price-title">software developer</span>
+                    <div class="price">
+                     <img src="assets/images/userbamwine.jpg" alt="oaksoft" width="100%" height="100%">
+                    </div>
+                  </div>
+                  <div class="price-article">
+                    <ul>
+                      <li>Bamwine Albert</li>
+                      <li>bamwinealbert@gmail.com</li>
+                      <li>C#,java,android flutter Angular js</li>
+                     
+                    </ul>
+                  </div>
+                  
+                </div>
+              </div>
+			  
+			  <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-table-price wow fadeInUp" data-wow-duration="0.75s" data-wow-delay="0.75s">
+                  <div class="price-header">
+                    <span class="price-title">architectural engineer</span>
+                    <div class="price">
+                     <img src="assets/images/userkintu.jpg" alt="oaksoft" width="100%" height="100%">
+                    </div>
+                  </div>
+                  <div class="price-article">
+                    <ul>
+                      <li>Kintu Henry</li>
+                      <li>kintuhenrycad@gmail.com</li>
+                      <li>C#,java,android flutter Angular js</li>
+                     
+                    </ul>
+                  </div>
+                  
+                </div>
+              </div>
+			  
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="single-table-price featured-price wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                  <div class="price-header">
+                    <span class="price-title">marketier</span>
+                    <div class="price">
+                     <img src="assets/images/team_femal.jpg" alt="oaksoft" width="100%" height="100%">
+                    </div>
+                  </div>
+                  <div class="price-article">
+                    <ul>
+                      <li>aisha</li>
+                      <li>aisha@gmail.com</li>
+                      <li>php,c#,databases</li>
+                      
+                    </ul>
+                  </div>
+                 
+                </div>
+              </div>
+             
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Pricing table -->  
+
+
+
+  <!-- Start subscribe us -->
+  <section id="subscribe">
+    <div class="subscribe-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="subscribe-area">
+              <h2 class="wow fadeInUp">Subscribe Newsletter</h2>
+              <form action="service.php?type=subscribe"  id="subscribeForm" method="post"  class="subscrib-form wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                <input type="email" id="email" name="email" placeholder="Enter Your E-mail..">
+                <button class="subscribe-btn" type="submit" id="sendMessage">Submit</button>
+              </form>
+			  
+			   
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End subscribe us -->
+
+  <!-- Start footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="footer-left">
+             <p>Designed by <a target="blank" href="http://bamwine.byethost14.com">Oaksoft</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="footer-right">
+            <a href="index.html"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer -->
+  
+            
+   <!-- jQuery library -->
+   <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>       
+   
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="assets/js/slick.js"></script>    
+  <!-- mixit slider -->
+  <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+ <!-- counter -->
+  <script src="assets/js/waypoints.js"></script>
+  <script src="assets/js/jquery.counterup.js"></script>
+  <!-- Wow animation-->
+  <script type="text/javascript" src="assets/js/wow.js"></script>  
+  <!-- progress bar   -->
+  <script type="text/javascript" src="assets/js/bootstrap-progressbar.js"></script>
+   <script src="assets/js/sweetalert.min.js"></script>
+ 
+  <!-- Custom js -->
+  <script type="text/javascript" src="assets/js/custom.js"></script>
+   <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            // jQuery Validation
+
+            $("#subscribeForm").validate({
+                // if valid, post data via AJAX
+				
+				
+                submitHandler: function(form) {
+                    $.post("service.php?type=subscribe" , { email: $("#email").val() }, function(data) {					
+                        $('#response').html(data);
+						$("#email").val("");
+						swal({
+                    title: "Thanks!",
+                    text: data,
+                    icon: "success"
+                    });
+					
+					});
+                },
+                // all fields are required
+                rules: {
+                          email: {
+                        required: true,
+                        email: true
+                    }
+                }
+            });
+        });
+    </script> 
+
+
+<script>
+  // Exit intent
+function addEvent(obj, evt, fn) {
+    if (obj.addEventListener) {
+        obj.addEventListener(evt, fn, false);
+    }
+    else if (obj.attachEvent) {
+        obj.attachEvent("on" + evt, fn);
+    }
+}
+
+// Exit intent trigger
+addEvent(document, 'mouseouttt', function(evt) {
+
+    if (evt.toElement == null && evt.relatedTarget == null ) {
+       swal({
+   title: 'Confirm',
+   text: 'Are you sure to delete this message?',
+   type: 'warning',
+   showCancelButton: true,
+   confirmButtonText: 'Yes, sir',
+   cancelButtonText: 'Not at all'
+});
+    };
+
+});
+
+  </script>
+  	
+
+  </body>
+</html>

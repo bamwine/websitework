@@ -1,0 +1,36 @@
+
+.shadow {
+    border-radius:0px;
+    -webkit-box-shadow: 0 0 30px black;
+    -moz-box-shadow: 0 0 30px black;
+    box-shadow: 0 0 30px black;
+}
+.light-shadow{
+    -webkit-box-shadow: 0 0 10px lightgray;
+    -moz-box-shadow: 0 0 10px lightgray;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.fa{
+    color:#fff;
+}
+h3 {
+    font-family:"Open Sans";
+}
+#navbar  ul li a {
+    color:#0B9444;
+    font-weight:bold;
+    font-size:16px;
+}
+.underline {
+    text-decoration:underline;
+}
+.sharp-corners {
+    border-radius:0px;
+}
+.border{border:1px solid lightgray;}.border-left{border-left:1px solid lightgray;}.border-right {border-right: 1px solid lightgray;}.border-bottom{border-bottom:1px solid lightgray;}.border-top{border-top:1px solid lightgray;}
+
+.shorter
+{
+    height:22px;
+}

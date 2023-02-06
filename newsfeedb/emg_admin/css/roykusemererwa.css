@@ -1,0 +1,283 @@
+@import url('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css');
+@import "bootstrap.min.css";
+@import "https://fonts.googleapis.com/css?family=Open+Sans|Coda|Droid+Sans|Source+Sans+Pro";
+
+.theming {
+    font-family: "Source Sans Pro";
+}
+
+.theme-color {
+    color:#3498DB;
+    font-family:"Source Sans Pro";
+
+}
+.white-bg{
+ background:#fff;
+}
+.segoe-light {
+    /**These methods work for both chrome and firefox so long as the font-weight is lighter*/
+    /*font-family: SegoeUI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;*/
+     font-family:'Segoe UI'; font-weight:Lighter;"
+}
+
+.enlarge_first_letter::first-letter {
+    font-size: 300%;
+    color: #000;
+}
+
+.hover_underline:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+.fit{
+    width:100%;
+}
+.no-border-right{
+ border-right:none;
+}
+.no-border-left {
+    border-left:none;
+}
+.no-border-top{
+    border-top:none;
+}
+.no-border-bottom{
+    border-bottom:none;
+}
+.shadow {
+    border-radius:0px;
+    -webkit-box-shadow: 0 0 30px black;
+    -moz-box-shadow: 0 0 30px black;
+    box-shadow: 0 0 30px black;
+}
+.light-shadow{
+    -webkit-box-shadow: 0 0 10px lightgray;
+    -moz-box-shadow: 0 0 10px lightgray;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.bold {
+    font-weight:bold;
+}
+h3 {
+    font-family:"Open Sans";
+}
+.underline {
+    text-decoration:underline;
+    cursor: pointer;
+}
+.sharp-corners {
+    border-radius:0px;
+}
+.rounded-corners {
+    border-radius:5px;
+}
+.border{border:1px solid lightgray;}.border-left{border-left:1px solid lightgray;}.border-right {border-right: 1px solid lightgray;}.border-bottom{border-bottom:1px solid lightgray;}.border-top{border-top:1px solid lightgray;}
+.no-borders {border:0px solid #fff;}
+.shorter
+{
+    height:22px;
+}
+.long {
+    width:100%;
+}
+.space-up
+{
+    margin-top:10px;
+}
+.dark{background:#373E46; color:#fff; border:1px solid #373E46;}
+.white-chars {color:#fff; }
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.bold-blue {
+    font-weight:bold;
+    color:#30A5FF;
+}
+
+
+.margin{
+    margin:10%;
+}
+
+.no-decoration{
+    color:#000;
+    text-decoration:none;
+}
+
+.thumbnail.right-caption > img {
+    float: left;
+    margin-right: 9px;
+}
+
+.thumbnail.right-caption {
+    float: left;
+}
+
+.thumbnail.right-caption > .caption {
+    padding: 4px;
+}
+
+
+
+
+/**Social Media Buttons
+Font-Awesome should be active
+This is how you call them
+#######
+<a class="facebookBtn smGlobalBtn" href="social-media-profile-url" ></a>
+<a class="twitterBtn smGlobalBtn" href="social-media-profile-url" ></a>
+######
+/* global button class */
+#social {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.smGlobalBtn { /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border:2px solid #ddd; /* add border to the buttons */
+    box-shadow: 0 3px 3px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px;
+    -moz-border-radius:27px;
+    -webkit-border-radius:27px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5; /* change the border color on mouse hover */
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+
+.twitterBtn:before{
+    font-family: "FontAwesome";
+    content: "\f099"; /* add twitter icon */
+
+}
+
+.twitterBtn:hover{
+    color: #00ABE3;
+    background: #fff;
+    border-color: #00ABE3;
+}
+
+/* google plus button class*/
+.googleplusBtn{
+    background: #e64522;
+}
+
+.googleplusBtn:before{
+    font-family: "FontAwesome";
+    content: "\f0d5"; /* add googleplus icon */
+}
+
+.googleplusBtn:hover{
+    color: #e64522;
+    background: #fff;
+    border-color: #e64522;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+
+.linkedinBtn:before{
+    font-family: "FontAwesome";
+    content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+    color: #0094BC;
+    background: #fff;
+    border-color: #0094BC;
+}
+
+/* pinterest button class*/
+.pinterestBtn{
+    background: #cb2027;
+}
+
+.pinterestBtn:before{
+    font-family: "FontAwesome";
+    content: "\f0d2"; /* add pinterest icon */
+}
+
+.pinterestBtn:hover{
+    color: #cb2027;
+    background: #fff;
+    border-color: #cb2027;
+}
+
+/* tumblr button class*/
+.tumblrBtn{
+    background: #3a5876;
+}
+
+.tumblrBtn:before{
+    font-family: "FontAwesome";
+    content: "\f173"; /* add tumblr icon */
+}
+
+.tumblrBtn:hover{
+    color: #3a5876;
+    background: #fff;
+    border-color: #3a5876;
+}
+
+/* rss button class*/
+.rssBtn{
+    background: #e88845;
+}
+
+.rssBtn:before{
+    font-family: "FontAwesome";
+    content: "\f09e"; /* add rss icon */
+}
+
+.rssBtn:hover{
+    color: #e88845;
+    background: #fff;
+    border-color: #e88845;
+}
+
+
+/* Navbar Gradient*/
+.rk-grad {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#777dba, #28307D); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#777dba, #28307D); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#777dba, #28307D); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#777dba, #28307D); /* Standard syntax */
+}
